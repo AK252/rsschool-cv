@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML, CSS & GIT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
     <div class="container">
-      <header>
-        <img src="img/avatar.jpg" alt="A. Kuznetsova">
-        <h1>Alena Kuznetsova</h1>
-        <h2 class="title">Contacts</h2>
-        <ul class="list">
-          <li>Tel:
-            <a href="tel:+79895269279">+7(989)526-92-79</a>
-          </li>
-          <li>Email:
-            <a href="mailto:alena92kuz@gmail.com">alena92kuz@gmail.com</a>
-          </li>
-          <li>Telegram: @AlenaKuznetsova92</li>
-        </ul>
-      </header>
+      <div class="wrapper">
+        <img class="avatar" src="img/avatar.jpg" alt="A. Kuznetsova">
+        <div class="header__wrapper">
+          <h1 class="header__title_main">Alena Kuznetsova</h1>
+          <h2 class="title header__title">Contacts</h2>
+          <ul class="header__list">
+            <li class="header__item">Tel:
+              <a class="header__link" href="tel:+79895269279">+7(989)526-92-79</a>
+            </li>
+            <li class="header__item">Email:
+              <a class="header__link" href="mailto:alena92kuz@gmail.com">alena92kuz@gmail.com</a>
+            </li>
+            <li class="header__item">Telegram: @AlenaKuznetsova92</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <main>
-
+  <main>
+    <div class="container">
+      <div class="main__wrapper">
         <section>
           <h2 class="title">About me</h2>
           <p>
             I am a linguist. For several years my work has been related to my education. However, the IT field has
             always been interesting to me. So this year I decided to change my life.
+          </p>
+          <p>
             I want to be a Front-end Developer. That’s my main goal.
           </p>
         </section>
@@ -35,24 +44,23 @@
         <section>
           <h2 class="title">Skills</h2>
           <ul class="list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Preprocessors: SASS, LESS</li>
-            <li>Adaptive & cross-browser website layout</li>
-            <li>JavaScript</li>
-            <li>Figma, Photoshop</li>
+            <li class="list__item">HTML</li>
+            <li class="list__item">CSS</li>
+            <li class="list__item">Preprocessors: SASS, LESS</li>
+            <li class="list__item">Adaptive & cross-browser website layout</li>
+            <li class="list__item">JavaScript</li>
+            <li class="list__item">Figma, Photoshop</li>
           </ul>
         </section>
 
         <section>
           <h2 class="title">Code example</h2>
-          <pre>
+          <pre class="code-example">
             window.addEventListener('DOMContentLoaded', function () {
               document.querySelector('#burger').addEventListener('click', function() {
                 document.querySelector('#nav').classList.toggle('is-active')
               });
-            });
-          </pre>
+            });</pre>
         </section>
 
         <section>
@@ -65,12 +73,24 @@
         <section>
           <h2 class="title">Languages</h2>
           <ul class="list">
-            <li>English (B1)</li>
-            <li>Korean (A1)</li>
+            <li class="list__item">English (B1)</li>
+            <li class="list__item">Korean (A1)</li>
           </ul>
         </section>
-
-      </main>
+      </div>
     </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="wrapper">
+        <p>Created in 2021</p>
+        <ul class="footer__links">
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
