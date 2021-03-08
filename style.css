@@ -88,3 +88,35 @@ section:not(:last-child) {
     background-color: #CACACA;
     outline: 2px solid #2F2F2F;
 }
+
+.footer {
+    padding: 25px 0;
+    background-color: #CACACA;
+}
+
+.footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info {
+    width: 250px;
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #008080;
+    text-align: center;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+    margin-top: 25px;
+    list-style-type: none;
+}
+
+.footer__icon {
+    width: 80px;
+}
